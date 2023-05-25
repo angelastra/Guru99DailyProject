@@ -26,7 +26,7 @@ public class LoginTests {
 		ManagerHomePage mhp = lp.logIn(baseURL,userName,password);
 		String managerId = mhp.getManagerId();
 		org.junit.Assert.assertTrue(managerId.contains(userName));
-
+		driver.quit();
 	}
 	
 	public static WebDriver initializeDriver() throws IOException 
