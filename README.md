@@ -26,7 +26,24 @@ There is another major flaw. The script is a rookie script & in not production r
 
 Here is how you can make the script production ready
 
-    1.-The code to setup and launch WebDriver (Firefox) should be improved to include Location   Firefox.exe    and a Firefox Profile must be created.
+    *1.-The code to setup and launch WebDriver (Firefox) should be improved to include Location Firefox.exe and a Firefox Profile must be created.
     2.-The amount of time the driver should wait when searching for a GUI element should be specified
     3.-The code to setup and launch Firefox should be created as a separate method.
     4.-All script initialization parameters like Location of Firefox , Base URL, User Name , Password etc should be stored in separate file say Util.java.  This helps in easy maintenance of script
+    
+    *: WebDriverManager was used to setup and launch webdriver for simplify the code.
+
+Day 3: Parametrize your Script
+
+The client has enhanced the test scenario to include more test cases
+
+![Day3](https://github.com/angelastra/AutomationTestingInGitHub/assets/31233049/1759ffc4-53cc-4bca-ba4c-02f379d4cf3a)
+
+One approach to automate this is to record separate script for all the above test cases. But this defeats the very purpose of automation.
+The best technique to automate the above test suite  is to parametrize the script.
+The most famous tool store data for parametrization is MS Excel.
+Go ahead and create a script to read test-data from an Excel and execute Webdriver test cases.
+
+
+
+    
